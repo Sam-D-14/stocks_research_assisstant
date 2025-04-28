@@ -18,8 +18,8 @@ def run():
     Run the crew.
     """
     inputs = {
-        'stock_name': 'Apple',
-        'current_date': str(datetime.now())
+        'topic': 'AI LLMs',
+        'current_year': str(datetime.now().year)
     }
     
     try:
