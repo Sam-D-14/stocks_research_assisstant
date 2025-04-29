@@ -19,7 +19,8 @@ def run():
     """
     inputs = {
         'stock_name': 'Apple',
-        'current_date': str(datetime.now())
+        'current_date': str(datetime.now()),
+        'additional_info':"We need to get the data for last 2 weeks"
     }
     
     try:

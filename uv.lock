@@ -816,6 +816,18 @@ wheels = [
 ]
 
 [[package]]
+name = "finnhub-python"
+version = "2.4.23"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6f/8b/1fadbc5c4ed807071ac2f72c6e051ba39d06a746357d3c717d0edea21607/finnhub_python-2.4.23.tar.gz", hash = "sha256:47b74f0c994af900a4b1c76376cf5b75d03a33ee3a5ff2c30e3c4472bc834959", size = 13459, upload_time = "2025-03-16T06:11:37.579Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/17/09/9240b2a222717e7bda81f954047b662f2744aaeb6b29d62e89bb5c49dd16/finnhub_python-2.4.23-py3-none-any.whl", hash = "sha256:27585dfa32a92b435bd69bfbc9062bcf41a3b35302b654062816640f67b89eea", size = 11897, upload_time = "2025-03-16T06:11:36.085Z" },
+]
+
+[[package]]
 name = "flatbuffers"
 version = "25.2.10"
 source = { registry = "https://pypi.org/simple" }
@@ -3239,12 +3251,16 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "crewai", extra = ["tools"] },
+    { name = "finnhub-python" },
+    { name = "pydantic" },
     { name = "setuptools" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "crewai", extras = ["tools"], specifier = ">=0.114.0,<1.0.0" },
+    { name = "finnhub-python", specifier = ">=2.4.23" },
+    { name = "pydantic", specifier = ">=2.11.3" },
     { name = "setuptools", specifier = ">=80.0.0" },
 ]
 

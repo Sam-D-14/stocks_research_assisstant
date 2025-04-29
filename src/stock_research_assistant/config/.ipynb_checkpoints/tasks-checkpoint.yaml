@@ -4,6 +4,8 @@ research_task:
     Make sure you find any latest and most relevant information given
     the current date is {current_date}
   expected_output: >
+    Extract the stock symbol as it's identified by NASDAQ Exchange, using the symbol tool by giving {stock_name} as input
+    Extract the stock data based on extracted stock symbol using the data tool, giving time window as specified in {additional_info}
     Information on how the prices and the market will be impacted. Especially around {stock_name} and your recommendation on whether
     buy or sell or hold the {stock_name}
   agent: researcher
